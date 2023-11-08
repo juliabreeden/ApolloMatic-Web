@@ -1,8 +1,8 @@
 //Need three separate components to render - mongo schema, graphQL schema, 
 import React, {useEffect, useState, useContext} from 'react'; 
-import GraphqlResolvers from '/GraphqlResolvers.jsx'; 
-import GraphqlSchema from '/GraphqlSchema.jsx'; 
-import MongoSchema from '/MongoSchema.jsx'; 
+import GraphqlResolvers from './GraphqlResolvers.jsx'; 
+import GraphqlSchema from './GraphqlSchema.jsx'; 
+import MongoSchema from './MongoSchema.jsx'; 
 
 const Playground = () => {
     return (

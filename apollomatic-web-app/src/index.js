@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.css';
 import App from './App';
+import Navbar from './components/Navbar.jsx';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, routerProvider} from "react-router-dom";
 
