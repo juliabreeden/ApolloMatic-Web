@@ -1,7 +1,7 @@
 const GraphqlResolvers = () => {
     return (
         <div>
-            <label for="GraphQLSchema">GraphQL Schema</label>
+            <label for="GraphQLResolvers">GraphQL Resolvers</label>
             <div className = "graphqlresolvers-container"></div>
         </div>
     );
