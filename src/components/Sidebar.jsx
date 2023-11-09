@@ -1,41 +1,41 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
-import "../style/Sidebar.css"; 
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-scroll"; // Import Link from react-scroll
+import "../style/Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <Nav className="col-md-3 d-md-block sidebar">
+    <Nav className=" d-md-block sidebar">
       <div className="position-sticky">
         <ul className="nav flex-column">
           <li className="nav-item">
             <a className="nav-link" href="#section1">
-                Get Started
+              Get Started
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section2">
-                Installation
+              Installation
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section3">
-                Configuration
+              Configuration
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section4">
-                Running Apollomatic
+              Running Apollomatic
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section5">
-                Outputs
+              Outputs
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section6">
-                Testing Resolvers
+              Testing Resolvers
             </a>
           </li>
           {/* Add more navigation links for other sections as needed */}
