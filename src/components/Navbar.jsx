@@ -42,7 +42,9 @@ const ApolloNavbar = () => {
               <LinkContainer to="/docs">
                 <Nav.Link>Docs</Nav.Link>
               </LinkContainer>
-              <Nav.Link>About Us</Nav.Link>
+              <LinkContainer to="/about-us">
+                <Nav.Link>About Us</Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/playground">
                 <Nav.Link>Playground</Nav.Link>
               </LinkContainer>
