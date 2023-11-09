@@ -1,4 +1,11 @@
-/* src/App.css or another CSS file */
-.main-content {
-    padding-left: 260px; /* Adjust the value based on your sidebar's width */
+.col-md-3 {
+    padding: 5px;
+    margin-left: -10px;
+}
+
+.col-md-9 {
+    height: 90vh; /* Set the height to 100% of the viewport height or adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling if the content exceeds the container height */
+    padding: 15px; /* Add padding as needed */
+    /* Add any other styles you want for the scrollable content */
   }
