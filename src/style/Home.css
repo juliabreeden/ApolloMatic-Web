@@ -1,0 +1,37 @@
+.landing {
+  /* margin-left: 1rem !important;
+  margin-right: 1rem !important; */
+
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
+  flex-flow: column;
+
+  /* color blocking -- change this */
+  background-image: url("../../public/img/landing/2.png");
+  /* background-size: 3.2em; */
+  background-size: 80%;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+}
+.landing p {
+  margin-top: 10rem;
+}
+@media (max-width: 768px) {
+  .landing {
+    background-position: 50% 25%;
+  }
+  .landing p {
+    margin-top: 3rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .landing {
+    background-position: 50% 30%;
+  }
+  .landing p {
+    margin-top: 1rem;
+  }
+}
