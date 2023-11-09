@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+What is Apollomatic?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Apollomatic is an NPM package designed to simplify the process of generating Apollo Server GraphQL schemas and resolvers from existing Mongo schemas. With just a single command, you can quickly jumpstart your GraphQL API without the need to manually define schemas and resolvers.
 
-## Available Scripts
+Key Features
 
-In the project directory, you can run:
+Automatic Schema Generation: Apollomatic automatically generates GraphQL schemas based on your existing Mongo schemas, including types for queries, mutations, and the Mongo objects.
 
-### `npm start`
+Efficient Resolvers: The package creates resolvers that correspond to the types within the GraphQL schema, saving you the effort of writing them from scratch. These resolvers are functionally integrated with your database, linked to your Mongo models.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Time-Saving Solution: Whether you are new to GraphQL or an experienced developer, Apollomatic can significantly reduce the time and effort required to set up your GraphQL API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Getting Started
 
-### `npm test`
+Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you can use Apollomatic, ensure you have Node.js and NPM installed on your system. To install Apollomatic, follow these steps:
 
-### `npm run build`
+Run the following command in your project's root directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install -g apollomatic
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once installed, you can use Apollomatic by running the following command in your terminal:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npx apollomatic
 
-### `npm run eject`
+If the installation is successful, two new files will appear in your project directory: an index.js file under the "resolvers" folder (containing generated resolvers), and a schema.js file under the "src" folder (containing generated schemas).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Setting Up Your Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To configure Apollomatic for your project, create an apollo-config.js file. This file contains the necessary information for Apollomatic to work. Here's how to set up your apollo-config.js:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navigate to your project's root directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Locate the apollo-config.js file provided in the Apollomatic package. You can find it in the "templates" directory.
 
-## Learn More
+Copy the config file and paste it into your project's root directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Modify the copied apollo-config.js file to match your project's specific configuration needs. You can refer to our documentation for guidance on configuring Apollo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Save your changes.
 
-### Code Splitting
+Now, your project is configured with Apollo using the apollo-config.js file you customized.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Testing Resolvers
 
-### Analyzing the Bundle Size
+You can test your generated resolvers in the following ways:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Apollo Studio: If you've set up an endpoint for your project, you can test your resolvers within Apollo Studio's Explorer interface. Note that data must be present in the connected database for the queries to return results.
 
-### Making a Progressive Web App
+Postman: Resolvers can also be tested using Postman. Ensure that the GraphQL option is selected for the 'Body' section, and the query and variables components should be configured.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Getting Help
 
-### Advanced Configuration
+If you need assistance or have questions about Apollomatic, you can reach out to us at hello.apollomatic@gmail.com. Additionally, found a bug or have an idea? Please open an issue or start a discussion. We value your feedback and contributions to make Apollomatic even more powerful and user-friendly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Project Maintainers and Contributors
 
-### Deployment
+Special thanks to all the contributors and supporters who have starred this repository. Our amazing contributors include:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+john-bilunas
+juliabreeden
+KahaliaS
+mr-daviskim
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you appreciate this project, consider joining us or giving it a star. Your support will help attract more contributors and make the project even better.
