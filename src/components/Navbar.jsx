@@ -40,7 +40,9 @@ const ApolloNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link>Docs</Nav.Link>
-              <Nav.Link>About Us</Nav.Link>
+              <LinkContainer to="/about-us">
+                <Nav.Link>About Us</Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/playground">
                 <Nav.Link>Playground</Nav.Link>
               </LinkContainer>

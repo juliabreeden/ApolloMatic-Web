@@ -1,3 +1,7 @@
+:root {
+  --background-dark-grey: rgba(196, 193, 193, 0.3);
+}
+
 .landing {
   /* margin-left: 1rem !important;
   margin-right: 1rem !important; */
@@ -18,6 +22,75 @@
 .landing p {
   margin-top: 10rem;
 }
+.gif {
+  width: 70%;
+  /* max-width: 600px; */
+  height: auto;
+}
+.gif-container {
+  display: flex;
+  justify-content: center;
+}
+.row {
+  margin-top: 3em;
+}
+
+.copy1 {
+  height: 40px;
+  background-color: var(--background-dark-grey);
+  border-radius: 8px;
+  /* top | left and right | bottom */
+  margin: 0px 10px 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: solid black 1px;
+}
+#npm-info,
+.copy1,
+.btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#npm-info {
+  height: auto;
+}
+.npm,
+.question,
+.clipboard {
+  margin: 0px !important;
+}
+.npm {
+  padding-right: 20px;
+}
+.question {
+  padding-right: 10px;
+  color: rgb(86, 92, 100);
+}
+/* .clipboard span {
+  font-size: 1.3em;
+} */
+.clipboard .fa-clipboard:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+.gif-desc {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.gif-desc-left h2,
+.gif-desc-left p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+}
+hr {
+  margin: 0px;
+}
+
 @media (max-width: 768px) {
   .landing {
     background-position: 50% 25%;
@@ -33,5 +106,10 @@
   }
   .landing p {
     margin-top: 1rem;
+  }
+  .gif-desc-left,
+  .gif-desc {
+    display: flex;
+    justify-content: center;
   }
 }

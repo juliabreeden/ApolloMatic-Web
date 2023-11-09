@@ -1,13 +1,13 @@
-import "../style/Home.css";
+import "../style/AboutUs.css";
 
-const Home = () => {
+const AboutUs = () => {
   return (
     <>
       <div className="about-us">
-        <h1></h1>About Us
+        <h1>About Us</h1>
       </div>
     </>
   );
 };
 
-export default Home;
+export default AboutUs;
