@@ -1,0 +1,23 @@
+.team img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  /*Object fit will crop and center image based on width and height*/
+  object-fit: cover;
+  /*adds spacing after each team img*/
+  margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
