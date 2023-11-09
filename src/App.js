@@ -4,6 +4,8 @@ import AboutUs from "./components/About-Us.jsx";
 import ApolloFooter from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
 // import "./style/App.css";
+import Docs from "./components/Docs.jsx";
+import "./style/App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <ApolloNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/docs" element={<Docs />} />
         <Route path="/playground" element={<Playground />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>
