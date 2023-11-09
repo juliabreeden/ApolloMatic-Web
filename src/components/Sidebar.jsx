@@ -5,7 +5,7 @@ import "../style/Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <Nav className="col-md-3 d-md-block bg-light sidebar">
+    <Nav className="col-md-3 d-md-block sidebar">
       <div className="position-sticky">
         <ul className="nav flex-column">
           <li className="nav-item">
