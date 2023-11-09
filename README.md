@@ -1,10 +1,11 @@
-# ApolloMatic-Web
+# ApolloMatic 
+_Generate GraphQL schemas and resolvers for your Mongo schemas._
 
-What is Apollomatic?
+## What is Apollomatic?
 
 Apollomatic is an NPM package designed to simplify the process of generating Apollo Server GraphQL schemas and resolvers from existing Mongo schemas. With just a single command, you can quickly jumpstart your GraphQL API without the need to manually define schemas and resolvers.
 
-Key Features
+## Key Features
 
 Automatic Schema Generation: Apollomatic automatically generates GraphQL schemas based on your existing Mongo schemas, including types for queries, mutations, and the Mongo objects.
 
@@ -12,9 +13,9 @@ Efficient Resolvers: The package creates resolvers that correspond to the types 
 
 Time-Saving Solution: Whether you are new to GraphQL or an experienced developer, Apollomatic can significantly reduce the time and effort required to set up your GraphQL API.
 
-Getting Started
+## Getting Started
 
-Installation
+### Installation
 
 Before you can use Apollomatic, ensure you have Node.js and NPM installed on your system. To install Apollomatic, follow these steps:
 
@@ -28,7 +29,7 @@ npx apollomatic
 
 If the installation is successful, two new files will appear in your project directory: an index.js file under the "resolvers" folder (containing generated resolvers), and a schema.js file under the "src" folder (containing generated schemas).
 
-Setting Up Your Configuration
+## Setting Up Your Configuration
 
 To configure Apollomatic for your project, create an apollo-config.js file. This file contains the necessary information for Apollomatic to work. Here's how to set up your apollo-config.js:
 
