@@ -1,0 +1,20 @@
+.apollo-nav {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4em;
+}
+.git-link:hover {
+  color: var(--bs-navbar-hover-color);
+}
+.git-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}

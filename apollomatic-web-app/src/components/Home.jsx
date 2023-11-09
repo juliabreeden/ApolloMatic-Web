@@ -1,13 +1,22 @@
-
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Link, NavLink } from 'react-router-dom';
+import "../style/Home.css";
 
 const Home = () => {
-    return (
-        <>
-            <h1>This is home</h1>
-            {/* <NavLink to = '/playground'> <Playground></Playground></NavLink> */}
-        </>
-    )
+  return (
+    <>
+      <div className="landing">
+        <p>Lorem Ipsum</p>
+
+        <a href="https://www.npmjs.com/package/apollomatic">
+          <button type="button" className="btn btn-outline-dark">
+            Download NPM Package
+          </button>
+        </a>
+      </div>
+      <div className="package-desc">
+        <h1>Describe the package + Gifs</h1>
+      </div>
+    </>
+  );
 };
 
-export default Home; 
+export default Home;

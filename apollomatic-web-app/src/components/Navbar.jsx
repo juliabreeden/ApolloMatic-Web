@@ -10,37 +10,51 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { LinkContainer } from "react-router-bootstrap";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+import "../style/ApolloMatic_Navbar.css";
+
 const ApolloNavbar = () => {
   return (
     <>
-      <Navbar expand="md" className="sticky-top bg-body-tertiary">
-        <Container>
+      <Navbar expand="md" className="sticky-top apollo-nav">
+        <div className="container-fluid">
+          {/* <GoogleFont font="Roboto" /> */}
           <LinkContainer to="/">
             <Navbar.Brand>
               <img
-                src="img/logo/logoBold.png"
+                src="img/logo/logo-blk.png"
                 width="70"
                 height="40"
                 className="d-inline-block align-top"
                 alt="ApolloMatic logo"
-              /> Apollo Matic
+              />
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ms-auto">
+              <Nav.Link>Docs</Nav.Link>
+              <Nav.Link>About Us</Nav.Link>
               <LinkContainer to="/playground">
                 <Nav.Link>Playground</Nav.Link>
               </LinkContainer>
-              {/* <Nav.Link >Link</Nav.Link> */}
+              {/* Change Git to be a git icon ... font awesome? */}
+              <a
+                className="git-link"
+                target="_blank"
+                href="https://github.com/oslabs-beta/ApolloMatic"
+              >
+                <FontAwesomeIcon icon={faGithub} size="xl" />
+              </a>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </>
   );
@@ -48,12 +62,7 @@ const ApolloNavbar = () => {
 
 export default ApolloNavbar;
 
-/*<ul>
-      <li>
-        <NavLink to="/">home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/playground">Playground</NavLink>
-      </li>
-    </ul>
- */
+// This class was previously added to the Nav
+{
+  /* <Nav className="me-auto"></Nav> */
+}
