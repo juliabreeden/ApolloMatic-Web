@@ -5,7 +5,6 @@ const Home = () => {
     return (
         <>
             <h1>This is home</h1>
-            {/* <NavLink to = '/playground'> <Playground></Playground></NavLink> */}
         </>
     )
 };
