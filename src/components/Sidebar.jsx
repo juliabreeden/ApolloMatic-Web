@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll'; // Import Link from react-scroll
+import "../style/Sidebar.css"; 
 
 const Sidebar = () => {
   return (
