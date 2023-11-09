@@ -12,3 +12,8 @@
     padding: 15px; /* Add padding as needed */
     /* Add any other styles you want for the scrollable content */
   }
+
+  h3{
+    font-size: 18px;
+    font-weight: bold;
+  }
