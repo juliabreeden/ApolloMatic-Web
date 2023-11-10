@@ -4,7 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 //import image
-import blue from "../imgs/team/blue.png";
+import john from "../imgs/team/john.jpeg";
+import kahalia from "../imgs/team/kahalia.png";
+import davis from "../imgs/team/davis.jpeg";
+import julia from "../imgs/team/julia.jpeg";
 
 const AboutUs = () => {
   return (
@@ -32,28 +35,28 @@ const AboutUs = () => {
           <div className="team">
             <Row>
               <Col>
-                <img src={blue} alt="John Bilunas" />
+                <img src={john} alt="John Bilunas" />
                 <h3>John Bilunas</h3>
                 <a href="https://github.com/john-bilunas">
                   <h5>@John Bilunas</h5>
                 </a>
               </Col>
               <Col>
-                <img src={blue} alt="Davis Kim" />
+                <img src={davis} alt="Davis Kim" />
                 <h3>Davis Kim</h3>
                 <a href="https://github.com/mr-daviskim">
                   <h5>@Davis Kim</h5>
                 </a>
               </Col>
               <Col>
-                <img src={blue} alt="Julia Breeden" />
+                <img src={julia} alt="Julia Breeden" />
                 <h3>Julia Breeden</h3>
                 <a href="https://github.com/juliabreeden">
                   <h5>@Julia Breeden</h5>
                 </a>
               </Col>
               <Col>
-                <img src={blue} alt="Kahalia Stanberry" />
+                <img src={kahalia} alt="Kahalia Stanberry" />
                 <h3>Kahalia Stanberry</h3>
                 <a href="https://github.com/KahaliaS">
                   <h5>@Kahalia Stanberry</h5>
