@@ -1,6 +1,7 @@
 import "../style/Home.css";
 import installationGif from "../gifs/schema.gif";
 import schemaGeneration from "../gifs/schemaGeneration.gif";
+import testing from "../gifs/testing.gif";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -54,7 +55,11 @@ const Home = () => {
             <Col xs={12} md={5} className="gif-desc">
               <h2>The Set Up</h2>
               <hr />
-              <p>text</p>
+              <h5>
+                Download the ApolloMatic NPM package, set up your
+                apollo-config.js file, run the terminal command, and experience
+                the magic of ApolloMatic.
+              </h5>
             </Col>
           </Row>
 
@@ -64,7 +69,12 @@ const Home = () => {
             <Col xs={12} md={5} className="gif-desc-left">
               <h2>ApolloMatic in Action</h2>
               <hr />
-              <p>text</p>
+              <h5>
+                Enjoy the creation of functional GraphQL schemas and resolvers
+                with one simple command. Wave goodbye to complex mapping as
+                Apollomatic aligns your GraphQL schema to match your MongoDB
+                configurations.
+              </h5>
             </Col>
             <Col xs={12} md={7} className="gif-container">
               <img
@@ -80,15 +90,18 @@ const Home = () => {
           <Row>
             <Col xs={12} md={7} className="gif-container">
               <img
-                src={installationGif}
+                src={testing}
                 alt="This GIF demonstrates the testing of generated queries and mutations within Apollo Studio."
                 className="gif"
               />
             </Col>
             <Col xs={12} md={5} className="gif-desc">
-              <h2>Testing ApolloMatic Queries & Mutations</h2>
+              <h2>Enjoy the Magic of Apollomatic</h2>
               <hr />
-              <p>text</p>
+              <h5>
+                After creating your Apollo server, test out your auto-generated
+                resolvers in Postman or Apollo Studio.
+              </h5>
             </Col>
           </Row>
         </Container>
