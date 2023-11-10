@@ -16,21 +16,30 @@ const AboutUs = () => {
         <Container>
           <div className="about-us-app">
             <h1>About Us</h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
+            <h5>
+              Introducing Apollomatic: a powerful NPM package streamlining the
+              creation of GraphQL schemas and resolvers for your Mongo schemas.
+              With a single command, Apollomatic automatically generates GraphQL
+              schemas and efficient resolvers, saving valuable development time.
+              Whether you’re new to GraphQL or an experienced developer,
+              Apollomatic significantly simplifies the setup process for your
+              GraphQL API. Get started by installing the package, configuring it
+              with a customized apollo-config.js file, and seamlessly testing
+              your generated resolvers with Apollo Studio or Postman. For
+              assistance, bug reports, or contributions, reach out to us at
+              hello.apollomatic@gmail.com. Join our community and make
+              Apollomatic even more robust and user-friendly.
+            </h5>
           </div>
+
           <div className="about-us-team">
-            <h1>The Team</h1>
-            <p>
+            <h1>Meet the Team</h1>
+            {/* <h5>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.
-            </p>
+            </h5> */}
           </div>
           <div className="team">
             <Row>
