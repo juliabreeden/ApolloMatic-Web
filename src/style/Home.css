@@ -20,7 +20,9 @@
   background-repeat: no-repeat;
 }
 .landing p {
-  margin-top: 10rem;
+  /* Previously 10 bc it works better on smaller devices */
+  /* margin-top: 10rem; */
+  margin-top: 15rem;
 }
 .gif {
   width: 70%;

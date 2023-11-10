@@ -45,9 +45,10 @@ const ApolloNavbar = () => {
               <LinkContainer to="/about-us">
                 <Nav.Link>About Us</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/playground">
+              {/* <LinkContainer to="/playground">
                 <Nav.Link>Playground</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
+              <Nav.Link>Playground</Nav.Link>
               {/* Change Git to be a git icon ... font awesome? */}
               <a
                 className="git-link"
