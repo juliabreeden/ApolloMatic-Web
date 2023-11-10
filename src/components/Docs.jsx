@@ -2,6 +2,7 @@ import "../style/Docs.css";
 import Sidebar from "./Sidebar.jsx"; 
 import { Container, Row, Col } from 'react-bootstrap';
 import React from 'react';
+import CopyLinkInput from './CopyLinkInput';
 
 const Docs = () => {
     return (
@@ -26,8 +27,7 @@ const Docs = () => {
                             <br></br>
                             Run the following command in your project's root directory:
                             <br></br>
-                            <br></br>
-                            npm install -g apollomatic
+                            <CopyLinkInput />
                             <br></br>
                             <br></br>
                             After installation, you will need to set up the config file that provides the NPM package the information it needs to setup the GraphQL outputs.</p>
