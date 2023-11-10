@@ -22,7 +22,7 @@
 .landing p {
   /* Previously 10 bc it works better on smaller devices */
   /* margin-top: 10rem; */
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 .gif {
   width: 70%;
@@ -92,7 +92,16 @@
 hr {
   margin: 0px;
 }
-
+@media (min-width: 1200px) {
+  .landing p {
+    /* Previously 10 bc it works better on smaller devices */
+    /* margin-top: 10rem; */
+    margin-top: 15rem;
+  }
+  .landing {
+    height: 700px;
+  }
+}
 @media (max-width: 768px) {
   .landing {
     background-position: 50% 25%;
