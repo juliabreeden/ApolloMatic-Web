@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar.jsx";
 import { Container, Row, Col } from 'react-bootstrap';
 import React from 'react';
 import CopyLinkInput from './CopyLinkInput';
+import CopyLinkInputNpx from './CopyLinkInputNpx';
 
 const Docs = () => {
     return (
@@ -81,8 +82,7 @@ const Docs = () => {
                             <br></br>
                             <p>Once the NPM package is installed and the config file is set up, you can use Apollomatic by running the following command in your terminal:
                             <br></br>
-                            <br></br>
-                            npx apollomatic
+                            <CopyLinkInputNpx></CopyLinkInputNpx>
                             <br></br>
                             <br></br>
                             If the installation is successful, two new files will appear in your project directory: an index.js file under the "resolvers" folder (containing generated resolvers), and a schema.js file under the "src" folder (containing generated schemas).</p>
