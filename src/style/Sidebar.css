@@ -8,3 +8,11 @@
     /* background-color: #f0f0f0; Set the background color as needed */
     /* Add any other styles you want for your sidebar */
   }
+
+  ul {
+    list-style: none;
+  }
+
+  ul li {
+    margin-bottom: 15px;
+  }
