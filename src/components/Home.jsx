@@ -13,7 +13,8 @@ const Home = () => {
   return (
     <>
       <div className="landing">
-        <p>Lorem Ipsum</p>
+        <br></br>
+        <p>Generate GraphQL schemas and resolvers for your Mongo schemas.</p>
         <div className="btn-section">
           <div className="copy1">
             <div id="npm-info">

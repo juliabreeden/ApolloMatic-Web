@@ -1,12 +1,13 @@
 .col-md-3 {
     padding: 5px;
     margin-left: -40px;
-    margin-top: 10px;
+    margin-top: 50px;
     text-align: left; 
 }
 
 .col-md-9 {
     /* margin-left: 50px; */
+    margin-top: 50px;
     height: 90vh; /* Set the height to 100% of the viewport height or adjust as needed */
     overflow-y: auto; /* Enable vertical scrolling if the content exceeds the container height */
     padding: 15px; /* Add padding as needed */

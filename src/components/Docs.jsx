@@ -14,10 +14,13 @@ const Docs = () => {
                     <div class="col-md-9">
                         <section id="section1">
                             <h2>Get Started</h2>
+                            <br></br>
                             <p>Apollomatic is an NPM package designed to simplify the process of generating Apollo Server GraphQL schemas and resolvers from existing Mongo schemas. With just a single command, you can quickly jumpstart your GraphQL API without the need to manually define schemas and resolvers.</p>
                         </section>
+                        <br></br>
                         <section id="section2">
                             <h2>Installation</h2>
+                            <br></br>
                             <p>Before you can use Apollomatic, ensure you have Node.js and NPM installed on your system. To install Apollomatic, follow these steps:
                             <br></br>
                             <br></br>
@@ -29,8 +32,10 @@ const Docs = () => {
                             <br></br>
                             After installation, you will need to set up the config file that provides the NPM package the information it needs to setup the GraphQL outputs.</p>
                         </section>
+                        <br></br>
                         <section id="section3">
                             <h2>Configuration</h2>
+                            <br></br>
                             <h3>Setting Up</h3>
                             <p>To configure Apollomatic for your project, create an apollo-config.js file. This file contains the necessary information for Apollomatic to work. Here's how to set up your apollo-config.js:
                             <br></br>
@@ -52,6 +57,7 @@ const Docs = () => {
                             <br></br>
                             Now, your project is configured with Apollo using the apollo-config.js file you customized.</p>
                             {/* Accepted Mongoose SchemaTypes */}
+                            <br></br>
                             <h3>Compatible Mongoose SchemaTypes</h3>
                                 <p>Some Mongoose SchemaTypes do not seamlessly convert to Apollo Server Scalars for GraphQL. Here is a list of supported Mongoose SchemaTypes along with their corresponding GraphQL scalars:</p>
                                 <br></br>
@@ -69,8 +75,10 @@ const Docs = () => {
                             </ul>
                             <p>The custom scalars ApolloMaticDateScalar, ApolloMaticBufferScalar, and ApolloMaticMixedScalar have been created to allow for these Mongoose types to be properly converted to GraphQL within Apollo Server.</p>
                         </section>
+                        <br></br>
                         <section id="section4">
                             <h2>Running Apollomatic</h2>
+                            <br></br>
                             <p>Once the NPM package is installed and the config file is set up, you can use Apollomatic by running the following command in your terminal:
                             <br></br>
                             <br></br>
@@ -79,10 +87,14 @@ const Docs = () => {
                             <br></br>
                             If the installation is successful, two new files will appear in your project directory: an index.js file under the "resolvers" folder (containing generated resolvers), and a schema.js file under the "src" folder (containing generated schemas).</p>
                         </section>
+                        <br></br>
                         <section id="section5">
                             <h2>Outputs</h2>
+                            <br></br>
                             <p>The sections below detail what you can expect to have populated in your generated files:</p>
+                            <br></br>
                             <h3>Schema</h3>
+                            <br></br>
                             <p>This will conatain a gql string that defines...</p>
                             <ul>
                                 <li>Custom scalars that can be used as a data type for a field</li>
@@ -93,7 +105,9 @@ const Docs = () => {
 
                             </ul>
                             <p></p>
+                            <br></br>
                             <h3>Resolvers</h3>
+                            <br></br>
                             <p>The resolvers file will contain a resolvers object that contains logic to...</p>
                             <ul>
                                 <li>Read all instances of an entity </li>
@@ -103,8 +117,10 @@ const Docs = () => {
                                 <li>Update an istance of an entity</li>
                             </ul>
                         </section>
+                        <br></br>
                         <section id="section6">
                             <h2>Testing Resolvers</h2>
+                            <br></br>
                             <p>You can test your generated resolvers in the following ways:
                             <br></br>
                             <br></br>
